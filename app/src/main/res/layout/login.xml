@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="@string/login_text"
+        android:textSize="18sp"
+        android:layout_margin="10dip">
+    </TextView>
+
+    <TextView
+        android:id="@+id/login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="@string/login_username"
+        android:layout_marginEnd="10dip"
+        android:layout_marginStart="10dip">
+    </TextView>
+
+    <EditText
+        android:id="@+id/login_insert_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:hint="@string/login_enter_username"
+        android:inputType="textEmailAddress"
+        android:layout_marginEnd="10dip"
+        android:layout_marginStart="10dip"
+        android:layout_marginBottom="10dip">
+    </EditText>
+
+    <TextView
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="@string/login_password"
+        android:layout_marginEnd="10dip"
+        android:layout_marginStart="10dip">
+    </TextView>
+
+    <EditText
+        android:id="@+id/login_insert_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:hint="@string/login_enter_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_marginEnd="10dip"
+        android:layout_marginStart="10dip">
+    </EditText>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/login_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dip">
+
+        <Button
+            android:id="@+id/login_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:text="@string/login_confirm"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+
+        <Button
+            android:id="@+id/login_Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:layout_marginStart="10dip"
+            android:text="@string/login_close"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

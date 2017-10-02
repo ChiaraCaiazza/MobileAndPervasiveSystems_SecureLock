@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SecureLock</string>
+    <string name="change_settings">Edit settings</string>
+    <string name="settings_activity">Settings activity</string>
+
+    <!-- activity_main.xml strings-->
+    <string name="home_button">Turn back to the home</string>
+    <string name="log_button">Insert your email credentials</string>
+    <string name="lock_content_description">Press to lock/unlock</string>
+
+
+    <!-- preferences strings-->
+    <string name="alarm_triggers">Alarm triggers</string>
+    <string name="information_settings">Information settings</string>
+    <string name="email_settings">Email settings</string>
+    <string name="ringtone_settings">Ringtone settings</string>
+    <string name="alarm_trigger_proximity_title">Use the proximity sensor</string>
+    <string name="alarm_trigger_proximity_summary">The sensor is used to detect if the device was taken.</string>
+    <string name="alarm_trigger_accelerometer_title">Use the accelerometer sensor</string>
+    <string name="alarm_trigger_accelerometer_summary">The sensor is used to detect if the device was moved.</string>
+    <string name="alarm_trigger_charging_title">Power state monitoring</string>
+    <string name="alarm_trigger_charging_summary">Detect the disconnection of the power cable</string>
+    <string name="alarm_GPS_title">GPS</string>
+    <string name="alarm_GPS_summary">Use the GPS to receive information about your device.
+        Pay attention if you disable this option, no email will be sent.</string>
+    <string name="alarm_photo_title">Photo</string>
+    <string name="alarm_photo_summary">The application will sent pictures periodically if the alarm
+        expires. Pay attention: if GPS option is disabled, no photo will be sent.</string>
+    <string name="alarm_email_receiver_title">Email receiver</string>
+    <string name="alarm_email_receiver_summary">The application will sent it\'s location
+        periodically if the alarm expires.</string>
+    <string name="alarm_time_to_send_title">Time to send</string>
+    <string name="alarm_time_to_send_summary">Time that has to elapse between two emails.\nPay
+        attention: a lower time require more data traffic but also provide much more informations</string>
+
+
+    <!-- login.xml strings-->
+    <string name="login_username">Username</string>
+    <string name="login_enter_username">Enter username</string>
+    <string name="login_password">Password</string>
+    <string name="login_enter_password">Enter password</string>
+    <string name="login_confirm">Confirm</string>
+    <string name="login_close">Close</string>
+    <string name="login_text">Insert your Gmail\'s address and the related password.\n Those
+        information will be used for sending emails when the alarm will be triggered.</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

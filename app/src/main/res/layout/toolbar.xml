@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upper_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    style="@style/toolbarTheme">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/securelock_logo"
+            android:layout_width="182dp"
+            android:layout_height="49dp"
+            android:layout_gravity="start"
+            android:elevation="4dp"
+            app:srcCompat="@drawable/image_securelock_logo"
+            android:contentDescription="@string/change_settings"
+            android:layout_marginStart="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:elevation="4dp"
+            app:srcCompat="@drawable/image_settings"
+            android:contentDescription="@string/change_settings"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:elevation="4dp"
+            app:srcCompat="@drawable/image_home"
+            android:contentDescription="@string/home_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/log_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/log_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/image_log"
+            app:layout_constraintRight_toLeftOf="@+id/home_button"
+            android:layout_marginEnd="8dp">
+        </ImageView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.Toolbar>
