@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--android:key-> used to save the key-value pair used by the system to save the setting in
+        a default SharedPreferences file. No interaction with the SharedPreferencesFile is required
+        (The system saves the user's changes automatically) -->
+    <PreferenceCategory
+        android:title="@string/alarm_triggers"
+        android:key="pref_key_alarm_triggers">
+
+        <SwitchPreference
+            android:key="pref_key_alarm_trigger_proximity_switch"
+            android:title="@string/alarm_trigger_proximity_title"
+            android:summary="@string/alarm_trigger_proximity_summary"
+            android:defaultValue="false"
+            android:enabled="true">
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:key="pref_key_alarm_trigger_accelerometer_switch"
+            android:title="@string/alarm_trigger_accelerometer_title"
+            android:summary="@string/alarm_trigger_accelerometer_summary"
+            android:defaultValue="false"
+            android:enabled="true">
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:key="pref_key_alarm_trigger_charging_switch"
+            android:title="@string/alarm_trigger_charging_title"
+            android:summary="@string/alarm_trigger_charging_summary"
+            android:defaultValue="false"
+            android:enabled="true">
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/information_settings"
+        android:key="pref_key_alarm_triggers">
+
+        <SwitchPreference
+            android:key="pref_key_alarm_GPS"
+            android:title="@string/alarm_GPS_title"
+            android:summary="@string/alarm_GPS_summary"
+            android:defaultValue="true">
+        </SwitchPreference>
+        <SwitchPreference
+            android:key="pref_key_alarm_photo"
+            android:title="@string/alarm_photo_title"
+            android:summary="@string/alarm_photo_summary"
+            android:defaultValue="true">
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/email_settings"
+        android:key="pref_key_alarm_triggers">
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="pref_key_email_receiver"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:title="@string/alarm_email_receiver_title"
+            android:summary="@string/alarm_email_receiver_summary">
+            </EditTextPreference>
+        <ListPreference
+            android:defaultValue="3"
+            android:entries="@array/time_to_send"
+            android:entryValues="@array/time_to_send"
+            android:key="pref_key_time_to_send"
+            android:title="@string/alarm_time_to_send_title"
+            android:summary="@string/alarm_time_to_send_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/ringtone_settings"
+        android:key="pref_key_alarm_triggers">
+
+        <RingtonePreference
+            android:defaultValue=""
+            android:key="pref_key_alarm_preferred_ringtone"
+            android:title="Ringtone preference"
+            android:ringtoneType="alarm"
+            android:showSilent="false">
+        </RingtonePreference>
+    </PreferenceCategory>
+</PreferenceScreen>

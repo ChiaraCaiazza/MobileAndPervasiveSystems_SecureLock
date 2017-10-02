@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarColorPrimary</item>
+        <item name="colorPrimaryDark">@color/toolbarColorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="toolbarTheme">
+        <item name="android:background">@color/toolbarColorPrimary</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:layout_columnSpan">2</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:color">@color/colorPrimaryDark</item>
+    </style>
+</resources>
